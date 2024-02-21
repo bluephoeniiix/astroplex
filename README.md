@@ -1,2 +1,1 @@
-# astroplex
-A modified version Starlight Astro theme
+packages/starlight/README.md
