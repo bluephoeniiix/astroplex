@@ -1,5 +1,6 @@
 import { ExpressiveCodeTheme, type ThemeObjectOrShikiThemeName } from 'astro-expressive-code';
-import nightOwlDark from './themes/night-owl-dark.jsonc?raw';
+// import nightOwlDark from './themes/night-owl-dark.jsonc?raw';
+import IBMPlexDark from './themes/ibm-plex-dark.jsonc?raw';
 import nightOwlLight from './themes/night-owl-light.jsonc?raw';
 
 export type BundledThemeName = 'starlight-dark' | 'starlight-light';
@@ -21,7 +22,7 @@ export function preprocessThemes(
 	return themes.map((theme) => {
 		// If the current entry is the name of a bundled theme, load it
 		if (theme === 'starlight-dark' || theme === 'starlight-light') {
-			const bundledTheme = theme === 'starlight-dark' ? nightOwlDark : nightOwlLight;
+			const bundledTheme = theme === 'starlight-dark' ? IBMPlexDark : nightOwlLight;
 			return customizeBundledTheme(ExpressiveCodeTheme.fromJSONString(bundledTheme));
 		}
 		// Otherwise, just pass it through

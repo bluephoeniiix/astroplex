@@ -33,7 +33,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		starlight({
-			title: 'Starlight',
+			title: 'BLUEPHOENIIIX',
 			logo: {
 				light: '/src/assets/logo-light.svg',
 				dark: '/src/assets/logo-dark.svg',
@@ -42,29 +42,32 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
 			},
-			social: {
-				github: 'https://github.com/withastro/starlight',
-				discord: 'https://astro.build/chat',
-			},
+			// social: {
+			// 	github: 'https://github.com/withastro/starlight',
+			// 	discord: 'https://astro.build/chat',
+			// },
 			head: [
-				{
-					tag: 'script',
-					attrs: {
-						src: 'https://cdn.usefathom.com/script.js',
-						'data-site': 'EZBHTSIG',
-						defer: true,
-					},
-				},
-				{
-					tag: 'meta',
-					attrs: { property: 'og:image', content: site + 'og.jpg?v=1' },
-				},
-				{
-					tag: 'meta',
-					attrs: { property: 'twitter:image', content: site + 'og.jpg?v=1' },
-				},
+				// {
+				// 	tag: 'script',
+				// 	attrs: {
+				// 		src: 'https://cdn.usefathom.com/script.js',
+				// 		'data-site': 'EZBHTSIG',
+				// 		defer: true,
+				// 	},
+				// },
+				// {
+				// 	tag: 'meta',
+				// 	attrs: { property: 'og:image', content: site + 'og.jpg?v=1' },
+				// },
+				// {
+				// 	tag: 'meta',
+				// 	attrs: { property: 'twitter:image', content: site + 'og.jpg?v=1' },
+				// },
 			],
-			customCss: process.env.NO_GRADIENTS ? [] : ['./src/assets/landing.css'],
+			customCss: process.env.NO_GRADIENTS ? [] : [
+				'./src/assets/landing.css',
+				'@ibm/plex/css/ibm-plex.css',
+			],
 			locales,
 			sidebar: [
 				{
@@ -196,11 +199,11 @@ export default defineConfig({
 			],
 			plugins: process.env.CHECK_LINKS
 				? [
-						starlightLinksValidator({
-							errorOnFallbackPages: false,
-							errorOnInconsistentLocale: true,
-						}),
-				  ]
+					starlightLinksValidator({
+						errorOnFallbackPages: false,
+						errorOnInconsistentLocale: true,
+					}),
+				]
 				: [],
 		}),
 	],

@@ -28,6 +28,7 @@ const href = formatPath(Astro.props.locale || '/');
 						height={logos.light?.height}
 					/>
 				)}
+				<p style="color: grey;  font-size: 25px; font-weight: 300;">BLUEPHOENIIIX</p>
 			</>
 		)
 	}
@@ -45,6 +46,8 @@ const href = formatPath(Astro.props.locale || '/');
 		color: var(--sl-color-text-accent);
 		text-decoration: none;
 		white-space: nowrap;
+		font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+			monospace;
 	}
 	img {
 		height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
@@ -52,5 +55,7 @@ const href = formatPath(Astro.props.locale || '/');
 		max-width: 100%;
 		object-fit: contain;
 		object-position: 0 50%;
+		font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+			monospace;
 	}
 </style>

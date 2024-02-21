@@ -16,6 +16,8 @@
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.4.4",
     "@astrojs/starlight": "workspace:*",
+    "@fontsource/ibm-plex-serif": "^5.0.8",
+    "@ibm/plex": "^6.4.0",
     "@lunariajs/core": "^0.0.25",
     "@types/culori": "^2.0.0",
     "astro": "^4.3.5",
