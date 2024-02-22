@@ -1,0 +1,117 @@
+:root {
+	--purple-hsl: 255, 60%, 60%;
+	--overlay-blurple: hsla(var(--purple-hsl), 0.2);
+}
+
+:root[data-theme='light'] {
+	--purple-hsl: 255, 85%, 65%;
+}
+
+[data-has-hero] .page {
+	background:
+		linear-gradient(215deg, var(--overlay-blurple), transparent 0%),
+		radial-gradient(var(--overlay-blurple), transparent 0%) no-repeat -60vw -40vh / 105vw 200vh,
+		radial-gradient(var(--overlay-blurple), transparent 0%) no-repeat 50% calc(100% + 20rem) / 60rem
+			30rem;
+}
+
+[data-has-hero] header {
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
+	-webkit-backdrop-filter: blur(16px);
+	backdrop-filter: blur(16px);
+}
+
+[data-has-hero] .hero > img {
+	filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+}
+
+:root {
+	--sl-content-width: 120rem;
+	--sl-text-5xl: 3.5rem;
+}
+
+:root {
+	--sl-font: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+	--sl-font-system: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+	--sl-font-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	--sl-font-system-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+		Courier, monospace;
+	--__sl-font: var(--sl-font, var(--sl-font-system)), var(--sl-font-system);
+	--__sl-font-mono: var(--sl-font-mono, var(--sl-font-system-mono)), var(--sl-font-system-mono);
+}
+
+.sl-markdown-content h1:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h1);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+.sl-markdown-content h2:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h2);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+.sl-markdown-content h3:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h3);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+.sl-markdown-content h4:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h4);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+.sl-markdown-content h5:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h5);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+.sl-markdown-content h6:not(:where(.not-content *)) {
+	font-size: var(--sl-text-h6);
+	font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+		monospace;
+	font-weight: 300;
+	color: var(--sl-color-gray);
+}
+
+
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #000000;
+	--sl-color-accent: #3447ff;
+	--sl-color-accent-high: #a8a8a8;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eceef2;
+	--sl-color-gray-2: #c0c2c7;
+	--sl-color-gray-3: #888b96;
+	--sl-color-gray-4: #545861;
+	--sl-color-gray-5: #353841;
+	--sl-color-gray-6: #1b1b1b;
+	--sl-color-black: #181818;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #c7d6ff;
+	--sl-color-accent: #364bff;
+	--sl-color-accent-high: #182775;
+	--sl-color-white: #17181c;
+	--sl-color-gray-1: #24272f;
+	--sl-color-gray-2: #353841;
+	--sl-color-gray-3: #545861;
+	--sl-color-gray-4: #888b96;
+	--sl-color-gray-5: #c0c2c7;
+	--sl-color-gray-6: #eceef2;
+	--sl-color-gray-7: #f5f6f8;
+	--sl-color-black: #ffffff;
+}

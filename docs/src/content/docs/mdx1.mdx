@@ -1,0 +1,96 @@
+---
+title: MDX Basics(1)
+description: MDX Cheatsheet
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Forewords with [HTML](https://astro.build) and [PATH](/manual-setup/)
+
+## H2
+
+### H3
+
+# `Code Example With Tabs`
+<Tabs>
+<TabItem label="npm">
+
+```sh
+npm create astro@latest -- --template starlight
+```
+
+</TabItem>
+<TabItem label="pnpm">
+
+```sh
+pnpm create astro --template starlight
+```
+
+</TabItem>
+<TabItem label="Yarn">
+
+```sh
+yarn create astro --template starlight
+```
+
+</TabItem>
+</Tabs>
+
+:::tip[TIPS]
+A TIPS
+:::
+
+### `Inline Code`
+
+Inline code `code`.
+
+
+### Bold Tags
+- **Bold Tag** Words.
+- **Bold Tag** Words.
+- **Bold Tag** Words.
+
+
+## Code 
+
+```js ins={8}
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+
+export default defineConfig({
+	integrations: [
+		starlight({
+			title: 'My delightful docs site',
+		}),
+	],
+});
+```
+
+
+```js ins={3,6}
+// src/content/config.ts
+import { defineCollection } from 'astro:content';
+import { docsSchema } from '@astrojs/starlight/schema';
+
+export const collections = {
+	docs: defineCollection({ schema: docsSchema() }),
+};
+```
+
+## Tree
+
+import FileTree from '~/components/file-tree.astro';
+
+<FileTree>
+
+- src/
+  - content/
+    - docs/
+      - **guides/**
+        - guide.md
+        - index.md
+  - pages/
+- astro.config.mjs
+
+</FileTree>
