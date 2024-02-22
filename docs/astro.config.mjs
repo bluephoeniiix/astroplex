@@ -41,7 +41,8 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			editLink: {
-				baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
+				// baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
+				baseUrl: 'your git url',
 			},
 			// social: {
 			// 	github: 'https://github.com/withastro/starlight',
