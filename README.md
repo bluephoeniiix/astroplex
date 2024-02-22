@@ -13,7 +13,7 @@ A modified version Starlight Astro theme
 8. Visualized File Tree Structures
 9. Font Replacement (IBM Plex)
 
-more functionalities in on developing.
+More functionalities are in developing.
 
 ## Showcases
 
@@ -22,6 +22,42 @@ more functionalities in on developing.
 ![bright theme with 2k PC screen's layout](/3.png)
 ![bright theme with Phone sceen's layout](/4.png)
 
-## Installations
+## Installations && 
 
-todo
+Inside `install-scripts` folder, enter:
+
+```bash
+docker build -t your-image-name .
+```
+
+Then:
+
+```bash
+docker run -i -t your-image-name /bin/bash
+```
+
+Then:
+
+```bash
+bash install.sh
+```
+
+Then activate nvm env:
+
+```bash
+bash
+```
+
+After this you can check wether nvm and pnpm are installed or not.
+
+`cd` into `astroplex` folder, type:
+
+```bash 
+pnpm install
+```
+
+Then `cd` into `docs/` folder, type:
+
+`npm run dev`
+
+Webpage will be rendered under the dev mode.
