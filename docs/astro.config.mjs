@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
-
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 export const locales = {
 	root: { label: 'English', lang: 'en' },
 	de: { label: 'Deutsch', lang: 'de' },
@@ -207,4 +208,8 @@ export default defineConfig({
 				: [],
 		}),
 	],
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex]
+	}
 });
