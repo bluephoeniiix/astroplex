@@ -1,5 +1,5 @@
 # Astroplex
-A modified version Starlight Astro theme
+A modified version Starlight Astro theme.
 
 ## Features
 
@@ -22,7 +22,7 @@ More functionalities are in developing.
 ![bright theme with 2k PC screen's layout](/3.png)
 ![bright theme with Phone sceen's layout](/4.png)
 
-## Installations && 
+## Installations && Dev
 
 Inside `install-scripts` folder, enter:
 
