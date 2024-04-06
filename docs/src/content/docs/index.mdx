@@ -1,0 +1,47 @@
+---
+title: WELCOME HERE, HI.
+head:
+  - tag: title
+    content: Home Page Copied From Astro Starlight
+description: This is a home page copied from Astro Starlight
+# template: splash
+# if you comment this, homepage layout will turn to a narrower version
+editUrl: false
+lastUpdated: true
+# the default 'lastUpdated' is false
+# hero:
+#   title: bluephoeniiix
+#   tagline: Example Tagline
+#   image:
+#     file: ~/assets/logo-dark.svg
+# actions:
+#   - text: Get started
+#     icon: right-arrow
+#     variant: primary
+#     link: /getting-started/
+#   - text: DOCS
+#     icon: external
+#     link: /getting-started/
+---
+
+import { CardGrid, Card } from '@astrojs/starlight/components';
+import AboutAstro from '~/components/about-astro.astro';
+
+
+# > ABOUT THIS SITE
+<br></br>
+<h1 style="color: gray;">This website is designed to record <span style="color: cyan;">entertaining</span> ideas, project developing and <span style="color: pink; font-weight: bold;">discoveries</span>.</h1>
+<br></br>
+# > ABOUT ME
+<br></br>
+
+```yaml
+ I'm a:
+
+- Mother Father Gentleman
+
+```
+
+<AboutAstro title="POWERED BY ASTRO">
+</AboutAstro>
+
