@@ -36,5 +36,7 @@
       "path": "examples/basics/dist/_astro/*.css",
       "limit": "14 kB"
     }
-  ]
+  ],
+  "dependencies": {
+  }
 }

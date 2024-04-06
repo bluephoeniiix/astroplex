@@ -21,9 +21,9 @@ const { labels } = Astro.props;
 </starlight-theme-select>
 
 {/* Inlined to avoid FOUC. Uses global scope from `ThemeProvider.astro` */}
-<script is:inline>
+<!-- <script is:inline>
 	StarlightThemeProvider.updatePickers();
-</script>
+</script> -->
 
 <script>
 	type Theme = 'auto' | 'dark' | 'light';
@@ -61,7 +61,7 @@ const { labels } = Astro.props;
 
 		/** Update select menu UI, document theme, and local storage state. */
 		#onThemeChange(theme: Theme): void {
-			StarlightThemeProvider.updatePickers(theme);
+			// StarlightThemeProvider.updatePickers(theme);
 			document.documentElement.dataset.theme =
 				theme === 'auto' ? this.#getPreferredColorScheme() : theme;
 			this.#storeTheme(theme);

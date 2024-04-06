@@ -1,28 +1,62 @@
 # Astroplex
-A modified version Starlight Astro theme.
+An optimized theme from Astro Starlight
 
 ## Features
 
-1. Support MDX
-2. Support Katex
-3. Light / Dark Themes
-4. Responsive Layout
-5. Full Text Searching
-6. Last Edited Time Enabled
-7. Expressive Code Highlighting (IBM Plex Theme)
-8. Visualized File Tree Structures
-9. Font Replacement (IBM Plex)
+### Optimized Typography
 
-More functionalities are in developing.
+- Adjusted widths of main text in central area to make a more compact view effect
+- Replacement to IBM Plex fonts families from Roboto
+- Minor adjustment to phone's viewports
+
+### Optimized Theme 
+
+- Theme modifications, inspired from IBM Carbon Design Light / Dark Theme
+
+### Optimized Images Layout
+
+- Make 7:3 flex basis layout to paragraph linked image
+```js
+<section style={{ display: 'flex' }}>
+  <div style={{ flexBasis: '70%', paddingRight: '20px' }}>
+    <p>
+        $p(x;\theta)$, $p_\theta(x)$ - Prior/initial/underlying probability distribution for state $x$ with model parameters $\theta$ <br></br>
+        $q(x;\theta)$, $q_\theta(x)$ - Posterior/updated/predicted probability distribution for state $x$ with model parameters $\theta$ <br></br>
+        $p(x|y)$ - Conditional probability distribution of state $x$ given state $y$  <br></br>
+        $\mathcal{N}(\mu,\sigma^{2})$ - Normal or Gaussian distribution <br></br>
+    </p>
+  </div>
+  <div style={{ flexBasis: '30%' }}>
+    <img src="https://source.unsplash.com/random/500x300" alt="Random Image" style={{ width: '100%', height: 'auto' }} />
+  </div>
+</section>
+```
+- Make more combinations' images layout with  paragraphs (to do)
+
+### Katex Support
+
+- Implement the missing math formular supports from Starlight
+
+### Diagram support (to do)
+
+- Implement the missing diagram support from Starlight
+
+More functionalities are under developing
 
 ## Showcases
 
-![dark theme with 2k PC screen's layout](/1.png)
-![math support in dark theme](/2.png)
-![bright theme with 2k PC screen's layout](/3.png)
-![bright theme with Phone sceen's layout](/4.png)
+Showcases taken by [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
 
-## Installations && Dev
+### Dark Theme
+![show case 1](image.png)
+
+### Light Theme
+
+![show case 2](image-1.png)
+
+## How to use
+
+### Installations && Dev
 
 Inside `install-scripts` folder, enter:
 
@@ -61,3 +95,11 @@ Then `cd` into `docs/` folder, type:
 `npm run dev`
 
 Webpage will be rendered under the dev mode.
+
+### Disable Astro Dev Bar
+
+In `docs/` folder, find `packages.json`, replace `dev` options'content into
+
+```bash
+npm cache clean --force && astro preferences disable devToolbar && astro dev
+```

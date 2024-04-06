@@ -164,12 +164,21 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"mdx3.mdx": {
+	id: "mdx3.mdx";
+  slug: "mdx3";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 };
 
 	};
 
 	type DataEntryMap = {
-		
+		"i18n": {
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

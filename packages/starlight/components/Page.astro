@@ -45,9 +45,24 @@ const pagefindEnabled =
 	data-theme="dark"
 >
 	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+			integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+			crossorigin="anonymous"
+		/>
 		<Head {...Astro.props} />
 		<style>
+			@media (min-width: 768px) {
+				body {
+					zoom: 120%;
+				}
+			}
+			@media (max-width: 767px) {
+				body {
+					zoom: 60%;
+				}
+			}
 			html:not([data-has-toc]) {
 				--sl-mobile-toc-height: 0rem;
 			}

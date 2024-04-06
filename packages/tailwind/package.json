@@ -19,8 +19,6 @@
     ".": "./index.ts"
   },
   "scripts": {
-    "test": "vitest",
-    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^1.2.2",
