@@ -27,3 +27,4 @@ fi
 
 nvm install node && npm install pnpm -g
 
+git clone https://github.com/bluephoeniiix/astroplex.git
