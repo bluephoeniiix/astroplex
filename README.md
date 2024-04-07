@@ -89,6 +89,11 @@ After this you can check wether nvm and pnpm are installed or not.
 ```bash 
 pnpm install
 ```
+#### Port Forwarding
+
+You probably need Visual Studio Code for Docker Remote Connect, if not, pls modify docker's port forwarding
+
+Open up Visual Studio Code, search Remote Dev and Docker plugin, click instanse then attach to Visual Studio Code
 
 Then `cd` into `docs/` folder, type:
 
