@@ -5,25 +5,26 @@ An optimized theme from Astro Starlight
 
 ### Optimized Typography
 
-- Adjusted widths of main text in central area to make a more compact view effect
-- Replacement to IBM Plex fonts families from Roboto
-- Minor adjustment to phone's viewports
+- Adjusted widths of main text in the central area to create a more compact view effect
+- Replaced Roboto fonts with IBM Plex font families
+- Minor adjustments to phone viewport
 
 ### Optimized Theme 
 
-- Theme modifications, inspired from IBM Carbon Design Light / Dark Theme
+- Theme modifications inspired by IBM Carbon Design Light/Dark Theme
 
 ### Optimized Images Layout
 
-- Make 7:3 flex basis layout to paragraph linked image
-```js
+- Created a 7:3 flex basis layout for paragraph-linked images
+
+```jsx
 <section style={{ display: 'flex' }}>
   <div style={{ flexBasis: '70%', paddingRight: '20px' }}>
     <p>
-        $p(x;\theta)$, $p_\theta(x)$ - Prior/initial/underlying probability distribution for state $x$ with model parameters $\theta$ <br></br>
-        $q(x;\theta)$, $q_\theta(x)$ - Posterior/updated/predicted probability distribution for state $x$ with model parameters $\theta$ <br></br>
-        $p(x|y)$ - Conditional probability distribution of state $x$ given state $y$  <br></br>
-        $\mathcal{N}(\mu,\sigma^{2})$ - Normal or Gaussian distribution <br></br>
+        $p(x;\theta)$, $p_\theta(x)$ - Prior/initial/underlying probability distribution for state $x$ with model parameters $\theta$ <br>
+        $q(x;\theta)$, $q_\theta(x)$ - Posterior/updated/predicted probability distribution for state $x$ with model parameters $\theta$ <br>
+        $p(x|y)$ - Conditional probability distribution of state $x$ given state $y$  <br>
+        $\mathcal{N}(\mu,\sigma^{2})$ - Normal or Gaussian distribution <br>
     </p>
   </div>
   <div style={{ flexBasis: '30%' }}>
@@ -31,17 +32,18 @@ An optimized theme from Astro Starlight
   </div>
 </section>
 ```
-- Make more combinations' images layout with  paragraphs (to do)
+
+- Plan to create more combinations of image layouts with paragraphs (to do)
 
 ### Katex Support
 
-- Implement the missing math formular supports from Starlight
+- Implemented missing math formula support from Starlight
 
 ### Diagram support (to do)
 
-- Implement the missing diagram support from Starlight
+- Plan to implement missing diagram support from Starlight
 
-More functionalities are under developing
+More functionalities are under development
 
 ## Showcases
 
@@ -82,28 +84,31 @@ Then activate nvm env:
 bash
 ```
 
-After this you can check wether nvm and pnpm are installed or not.
+After this, you can check whether nvm and pnpm are installed or not.
 
 `cd` into `astroplex` folder, type:
 
 ```bash 
 pnpm install
 ```
+
 #### Port Forwarding
 
-You probably need Visual Studio Code for Docker Remote Connect, if not, pls modify docker's port forwarding
+You probably need Visual Studio Code for Docker Remote Connect. If not, please modify Docker's port forwarding.
 
-Open up Visual Studio Code, search Remote Dev and Docker plugin, click instanse then attach to Visual Studio Code
+Open Visual Studio Code, search for the Remote Dev and Docker plugin, click on the instance, and attach to Visual Studio Code.
 
-Then `cd` into `docs/` folder, type:
+Then `cd` into the `docs/` folder, type:
 
-`npm run dev`
+```bash
+npm run dev
+```
 
-Webpage will be rendered under the dev mode.
+The webpage will be rendered under the dev mode.
 
 ### Disable Astro Dev Bar
 
-In `docs/` folder, find `packages.json`, replace `dev` options'content into
+In the `docs/` folder, find `packages.json`, and replace `dev` option's content with:
 
 ```bash
 npm cache clean --force && astro preferences disable devToolbar && astro dev
