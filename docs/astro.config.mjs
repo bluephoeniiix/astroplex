@@ -3,7 +3,9 @@ import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-// import remarkMermaid from 'astro-diagram/remark-mermaid';
+import react from '@astrojs/react';
+
+
 export const locales = {
 	root: { label: 'English', lang: 'en' },
 };
@@ -44,19 +46,88 @@ export default defineConfig({
 			locales,
 			sidebar: [
 				{
-					label: 'example markdown',
+					label: 'About This Site',
 					items: [
 						{
-							label: 'mdx1',
-							link: 'mdx1',
+							label: 'Blue Phoeniiix Channel',
+							link: 'bluephoeniiix_channel',
 						},
 						{
-							label: 'mdx2',
-							link: 'mdx2',
+							label: 'Themes',
+							link: 'astroplex_theme',
 						},
 						{
-							label: 'mdx3',
-							link: 'mdx3',
+							label: 'Layout',
+							link: 'astroplex_layout',
+						},
+						{
+							label: 'Todo',
+							link: 'astroplex_others',
+						},
+					],
+				},
+				{ 
+					label: 'City: Skylines 1',
+					items: [
+						{
+							label: 'Basic Mods Config',
+							link: 'csl_basic_mods',
+						},
+						{
+							label: 'Graphics Enhancement',
+							link: 'csl_enhanced_graphics',
+						}, 
+						{
+							label : 'Anarchy Mods (1)',
+							link: 'csl_anarchy_one',
+						},
+						{
+							label : 'Anarchy Mods (2)',
+							link: 'csl_anarchy_two',
+						},
+						{
+							label: 'Commercial Buildings High',
+							link: 'csl_commercial_buildings_high',
+						},
+						{
+							label: 'Commercial Buildings Mid',
+							link: 'csl_commercial_buildings_mid',
+						}, 
+						{
+							label : 'Commercial Buildings Low',
+							link: 'csl_commercial_buildings_low',
+						},
+						{
+							label: 'Residential Buildings High',
+							link: 'csl_residential_buildings_high',
+						},
+						{
+							label: 'Residential Buildings Mid',
+							link: 'csl_residential_buildings_mid',
+						}, 
+						{
+							label : 'Residential Buildings Low',
+							link: 'csl_residential_buildings_low',
+						},
+						{
+							label: 'Office Buildings High',
+							link: 'csl_office_buildings_high',
+						},
+						{
+							label: 'Office Buildings Mid',
+							link: 'csl_office_buildings_mid',
+						}, 
+						{
+							label : 'Office Buildings Low',
+							link: 'csl_office_buildings_low',
+						},
+						{
+							label : 'Vehicles',
+							link: 'csl_vehicles',
+						},
+						{
+							label : 'Roads',
+							link: 'csl_roads',
 						},
 					],
 				},
@@ -69,7 +140,7 @@ export default defineConfig({
 					}),
 				]
 				: [],
-		}),
+		}), react(),
 	],
 	markdown: {
 		remarkPlugins: [remarkMath],

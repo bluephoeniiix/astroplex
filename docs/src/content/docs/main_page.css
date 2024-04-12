@@ -1,0 +1,9 @@
+h1 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;    
+    font-size: 3rem;
+    line-height: var(--sl-line-height-headings);
+    font-weight: 800;
+    color: #002d9c;
+    font-family: 'IBM Plex Sans Condensed', condensed;
+}

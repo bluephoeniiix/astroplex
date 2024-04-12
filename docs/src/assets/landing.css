@@ -28,9 +28,8 @@
 
 :root {
     --sl-content-width: 80rem;
-    /* --sl-text-5xl: 10rem; */
+	width: 80%;
 }
-
 :root {
 	--sl-font: 'IBM Plex Sans', serif;
 	--sl-font-system: 'IBM Plex Sans', serif;
@@ -87,7 +86,7 @@
 :root {
 	--sl-color-accent-low: #000000;
 	--sl-color-accent: #3447ff;
-	--sl-color-accent-high: #a8a8a8;
+	--sl-color-accent-high: #4589ff;
 	--sl-color-white: #ffffff;
 	--sl-color-gray-1: #eceef2;
 	--sl-color-gray-2: #c0c2c7;
@@ -102,13 +101,14 @@
 	--sl-color-hairline: #171414;
 	--sl-color-hairline-shade: #171414;
 	--sl-color-hairline-light: #171414;
+	--sl-icon-color: #4e4e4e;
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
-	--sl-color-accent-low: #c7d6ff;
-	--sl-color-accent: #364bff;
-	--sl-color-accent-high: #182775;
-	--sl-color-white: #17181c;
+	--sl-color-accent-low: #123ddf;
+	--sl-color-accent: #123bdf;
+	--sl-color-accent-high: #858585;
+	--sl-color-white: #000000;
 	--sl-color-gray-1: #24272f;
 	--sl-color-gray-2: #353841;
 	--sl-color-gray-3: #545861;

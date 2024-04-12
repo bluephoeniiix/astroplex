@@ -143,6 +143,132 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"astroplex_layout.mdx": {
+	id: "astroplex_layout.mdx";
+  slug: "astroplex_layout";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"astroplex_others.mdx": {
+	id: "astroplex_others.mdx";
+  slug: "astroplex_others";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"astroplex_theme.mdx": {
+	id: "astroplex_theme.mdx";
+  slug: "astroplex_theme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_anarchy_one.mdx": {
+	id: "csl_anarchy_one.mdx";
+  slug: "csl_anarchy_one";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_anarchy_two.mdx": {
+	id: "csl_anarchy_two.mdx";
+  slug: "csl_anarchy_two";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_basic_mods.mdx": {
+	id: "csl_basic_mods.mdx";
+  slug: "csl_basic_mods";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_commercial_buildings_high.mdx": {
+	id: "csl_commercial_buildings_high.mdx";
+  slug: "csl_commercial_buildings_high";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_commercial_buildings_low.mdx": {
+	id: "csl_commercial_buildings_low.mdx";
+  slug: "csl_commercial_buildings_low";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_commercial_buildings_mid.mdx": {
+	id: "csl_commercial_buildings_mid.mdx";
+  slug: "csl_commercial_buildings_mid";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_enhanced_graphics.mdx": {
+	id: "csl_enhanced_graphics.mdx";
+  slug: "csl_enhanced_graphics";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_office_buildings_high.mdx": {
+	id: "csl_office_buildings_high.mdx";
+  slug: "csl_office_buildings_high";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_office_buildings_low.mdx": {
+	id: "csl_office_buildings_low.mdx";
+  slug: "csl_office_buildings_low";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_office_buildings_mid.mdx": {
+	id: "csl_office_buildings_mid.mdx";
+  slug: "csl_office_buildings_mid";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_residential_buildings_high.mdx": {
+	id: "csl_residential_buildings_high.mdx";
+  slug: "csl_residential_buildings_high";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_residential_buildings_low.mdx": {
+	id: "csl_residential_buildings_low.mdx";
+  slug: "csl_residential_buildings_low";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_residential_buildings_mid.mdx": {
+	id: "csl_residential_buildings_mid.mdx";
+  slug: "csl_residential_buildings_mid";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_roads.mdx": {
+	id: "csl_roads.mdx";
+  slug: "csl_roads";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"csl_vehicles.mdx": {
+	id: "csl_vehicles.mdx";
+  slug: "csl_vehicles";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
