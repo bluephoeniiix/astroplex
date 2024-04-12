@@ -164,6 +164,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"bluephoeniiix_channel.mdx": {
+	id: "bluephoeniiix_channel.mdx";
+  slug: "bluephoeniiix_channel";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "csl_anarchy_one.mdx": {
 	id: "csl_anarchy_one.mdx";
   slug: "csl_anarchy_one";
@@ -269,30 +276,30 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"examplemdx/mdx1.mdx": {
+	id: "examplemdx/mdx1.mdx";
+  slug: "examplemdx/mdx1";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"examplemdx/mdx2.mdx": {
+	id: "examplemdx/mdx2.mdx";
+  slug: "examplemdx/mdx2";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"examplemdx/mdx3.mdx": {
+	id: "examplemdx/mdx3.mdx";
+  slug: "examplemdx/mdx3";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"mdx1.mdx": {
-	id: "mdx1.mdx";
-  slug: "mdx1";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"mdx2.mdx": {
-	id: "mdx2.mdx";
-  slug: "mdx2";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"mdx3.mdx": {
-	id: "mdx3.mdx";
-  slug: "mdx3";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

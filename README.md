@@ -50,11 +50,11 @@ More functionalities are under development
 Showcases taken by [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)
 
 ### Dark Theme
-![show case 1](image.png)
+![Show Case](image-2.png)
 
 ### Light Theme
 
-![show case 2](image-1.png)
+![Show Case](image-3.png)
 
 ## How to use
 
