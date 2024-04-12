@@ -34,7 +34,7 @@ export default defineConfig({
 				baseUrl: 'https://github.com',
 			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/bluephoeniiix',
 				discord: 'https://astro.build/chat',
 			},
 			head: [
@@ -61,8 +61,8 @@ export default defineConfig({
 							link: 'astroplex_layout',
 						},
 						{
-							label: 'Todo',
-							link: 'astroplex_others',
+							label: 'Supported Features',
+							link: 'astroplex_supported_features',
 						},
 					],
 				},

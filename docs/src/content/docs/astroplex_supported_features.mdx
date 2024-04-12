@@ -1,0 +1,145 @@
+---
+title: SUPPORTED FEATURES
+lastUpdated: true
+editUrl: true
+tableOfContents: false
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# H1
+
+## H2
+
+### H3
+
+#### H4
+
+##### H5
+
+###### H6
+
+<br></br>
+
+<Tabs>
+<TabItem label="npm">
+
+```sh
+npm create astro@latest -- --template starlight
+```
+
+</TabItem>
+<TabItem label="pnpm">
+
+```sh
+pnpm create astro --template starlight
+```
+
+</TabItem>
+<TabItem label="Yarn">
+
+```sh
+yarn create astro --template starlight
+```
+
+</TabItem>
+</Tabs>
+
+:::tip[TIPS]
+A TIPS
+:::
+
+### `Inline Code`
+
+Inline code `code`.
+
+
+### Bold Tags
+- **Bold Tag** Words.
+- **Bold Tag** Words.
+- **Bold Tag** Words.
+
+
+## Code 
+
+```js ins={8}
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+
+export default defineConfig({
+	integrations: [
+		starlight({
+			title: 'My delightful docs site',
+		}),
+	],
+});
+```
+
+
+```js ins={3,6}
+// src/content/config.ts
+import { defineCollection } from 'astro:content';
+import { docsSchema } from '@astrojs/starlight/schema';
+
+export const collections = {
+	docs: defineCollection({ schema: docsSchema() }),
+};
+```
+
+## Tree
+
+import FileTree from '~/components/file-tree.astro';
+
+<FileTree>
+
+- src/
+  - content/
+    - docs/
+      - **guides/**
+        - guide.md
+        - index.md
+  - pages/
+- astro.config.mjs
+
+</FileTree>
+
+<section style={{ display: 'flex' }}>
+  <div style={{ flexBasis: '70%', paddingRight: '20px' }}>
+    <p>
+        $p(x;\theta)$, $p_\theta(x)$ - Prior/initial/underlying probability distribution for state $x$ with model parameters $\theta$ <br></br>
+        $q(x;\theta)$, $q_\theta(x)$ - Posterior/updated/predicted probability distribution for state $x$ with model parameters $\theta$ <br></br>
+        $p(x|y)$ - Conditional probability distribution of state $x$ given state $y$  <br></br>
+        $\mathcal{N}(\mu,\sigma^{2})$ - Normal or Gaussian distribution <br></br>
+    </p>
+  </div>
+  <div style={{ flexBasis: '30%' }}>
+    <img src="https://source.unsplash.com/random/500x300" alt="Random Image" style={{ width: '100%', height: 'auto' }} />
+  </div>
+</section>
+
+
+## Math Support
+
+$$
+ \lim_{x\to 0}{\frac{e^x-1}{2x}}
+ \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+ \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
+$$
+
+I Hate $LATEX$.
+
+$$
+  x = a_0 + \frac{1}{\displaystyle a_1 
+          + \frac{1}{\displaystyle a_2 
+          + \frac{1}{\displaystyle a_3 + a_4}}}
+$$
+
+
+## Table 
+
+|                |ASCII                          |HTML                         |
+|----------------|-------------------------------|-----------------------------|
+|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
+|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
+|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|

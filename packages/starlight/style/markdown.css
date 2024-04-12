@@ -100,6 +100,7 @@
 	display: block;
 	overflow: auto;
 	border-collapse: collapse;
+	font-family: var(--__sl-font-mono);
 }
 .sl-markdown-content tr:nth-child(2n):not(:where(.not-content *)) {
 	background-color: var(--sl-color-gray-7, var(--sl-color-gray-6));
