@@ -28,7 +28,7 @@
 
 :root {
     --sl-content-width: 80rem;
-	width: 80%;
+	width: 100%;
 }
 :root {
 	--sl-font: 'IBM Plex Sans', serif;

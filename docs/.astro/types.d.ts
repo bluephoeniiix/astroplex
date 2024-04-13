@@ -150,9 +150,9 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"astroplex_others.mdx": {
-	id: "astroplex_others.mdx";
-  slug: "astroplex_others";
+"astroplex_supported_features.mdx": {
+	id: "astroplex_supported_features.mdx";
+  slug: "astroplex_supported_features";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -272,27 +272,6 @@ declare module 'astro:content' {
 "csl_vehicles.mdx": {
 	id: "csl_vehicles.mdx";
   slug: "csl_vehicles";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"examplemdx/mdx1.mdx": {
-	id: "examplemdx/mdx1.mdx";
-  slug: "examplemdx/mdx1";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"examplemdx/mdx2.mdx": {
-	id: "examplemdx/mdx2.mdx";
-  slug: "examplemdx/mdx2";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"examplemdx/mdx3.mdx": {
-	id: "examplemdx/mdx3.mdx";
-  slug: "examplemdx/mdx3";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
