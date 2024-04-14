@@ -18,7 +18,7 @@ const site = VERCEL_PREVIEW_SITE;
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://bluephoeniiix.github.io',
-	base: 'docs',
+	base: '/',
 	trailingSlash: 'always',
 	integrations: [starlight({
 		title: 'BLUEPHOENIIIX',
