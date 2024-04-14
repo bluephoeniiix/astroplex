@@ -11,8 +11,7 @@
 	background:
 		linear-gradient(215deg, var(--overlay-blurple), transparent 0%),
 		radial-gradient(var(--overlay-blurple), transparent 0%) no-repeat -60vw -40vh / 105vw 200vh,
-		radial-gradient(var(--overlay-blurple), transparent 0%) no-repeat 50% calc(100% + 20rem) / 60rem
-			30rem;
+		radial-gradient(var(--overlay-blurple), transparent 0%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
 }
 
 [data-has-hero] header {
@@ -22,14 +21,15 @@
 	backdrop-filter: blur(16px);
 }
 
-[data-has-hero] .hero > img {
+[data-has-hero] .hero>img {
 	filter: drop-shadow(0 0 3rem var(--overlay-blurple));
 }
 
 :root {
-    --sl-content-width: 80rem;
+	--sl-content-width: 60rem;
 	width: 100%;
 }
+
 :root {
 	--sl-font: 'IBM Plex Sans', serif;
 	--sl-font-system: 'IBM Plex Sans', serif;
@@ -46,6 +46,7 @@
 	font-weight: 300;
 	color: var(--sl-color-gray);
 }
+
 .sl-markdown-content h2:not(:where(.not-content *)) {
 	font-size: var(--sl-text-h2);
 	font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
@@ -53,6 +54,7 @@
 	font-weight: 300;
 	color: var(--sl-color-gray);
 }
+
 .sl-markdown-content h3:not(:where(.not-content *)) {
 	font-size: var(--sl-text-h3);
 	font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
@@ -60,6 +62,7 @@
 	font-weight: 300;
 	color: var(--sl-color-gray);
 }
+
 .sl-markdown-content h4:not(:where(.not-content *)) {
 	font-size: var(--sl-text-h4);
 	font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
@@ -67,6 +70,7 @@
 	font-weight: 300;
 	color: var(--sl-color-gray);
 }
+
 .sl-markdown-content h5:not(:where(.not-content *)) {
 	font-size: var(--sl-text-h5);
 	font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
@@ -74,6 +78,7 @@
 	font-weight: 300;
 	color: var(--sl-color-gray);
 }
+
 .sl-markdown-content h6:not(:where(.not-content *)) {
 	font-size: var(--sl-text-h6);
 	font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
@@ -103,6 +108,7 @@
 	--sl-color-hairline-light: #171414;
 	--sl-icon-color: #4e4e4e;
 }
+
 /* Light mode colors. */
 :root[data-theme='light'] {
 	--sl-color-accent-low: #123ddf;

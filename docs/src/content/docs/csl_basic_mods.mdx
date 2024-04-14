@@ -7,15 +7,90 @@ tableOfContents: true
 
 ## Intro
 
-This blog is to create a complete series about configuring detailed mods in Cities: Skylines I.
-
+This blog aims to create a complete series about configuring detailed mods in Cities: Skylines.
 
 ## Prerequisites
 
-I'll explain why these are essential later.
+I'll explain why these are essential in later blogs:
 
-- Your PC MUST have RAM larger than 32GB.
-
+- Your PC MUST have RAM larger than 16GB. (I propose you have 32GB RAM)
 - You need to restore Cities: Skylines to factory settings.
-
 - Purchase "Cities: Skylines - Industries" DLC.
+
+:::caution[Limitations]
+This tutorial was written on 2/25/2024, and it does not guarantee compatibility in the future.
+:::
+
+Now, let's get into the topic.
+
+## Creating Collections
+
+Highly recommend creating collections and subscribing to items from your collections instead of randomly subscribing to hundreds of items from the workshop.
+
+I have created several collections, including mods and assets. Let's start by reviewing the mods collections.
+
+## Why Are They Called "Basic Mods"?
+
+Without these mods, you are essentially playing with the vanilla version. You might ask, "Why is vanilla not enough?" It depends on your playstyle. 
+
+Cities: Skylines was published in 2015 and heavily relies on open-source mods and assets from the Steam workshop. Without these additions, you're playing an empty shell that uses the game design from nine years ago. 
+
+So, subscribe to these mods without hesitation.
+
+## Harmony 2 (Mod Dependency)
+
+The original Harmony 2 project can be found [here](https://github.com/pardeike/Harmony). This GitHub repository, created by Andreas Pardeike, provides functionality for method injection and modification at runtime, avoiding the use of slow .Net reflection to 'drag methods and properties' from classes in DLL. Harmony 2 modifies IL code to implement changes to vanilla methods.
+
+If your project is Unity C# based, to create a mod in the Steam workshop, you need Harmony 2. The same applies if you subscribe to mods requiring Harmony 2.
+
+However, the Cities: Skylines community has its own version of Harmony 2, likely with targeted features for Cities: Skylines only.
+
+All you need to do is go to [this link](https://steamcommunity.com/workshop/filedetails/?id=2040656402) and add it to your collection.
+
+## 81 Tiles 2
+
+81 Tiles 2 unlocks and allows building on all map tiles, not just the central 25. It provides additional features:
+
+- Enables electricity transmission without power lines.
+- Enables electricity transmission along roads (a duplicated feature, enable it anyway).
+- Enables water, sewage, and heating transmission without pipes, and click its sub-option to ignore original water buildings.
+- Ignores area unlocking progression and permits building outside of own tiles.
+
+## Game Anarchy
+
+Game Anarchy provides various features, mostly unlocking game restrictions, with other minor modifications.
+
+1. This mod provides a redo of the default content manager panel. Click 'OPTIONS,' and a new one will pop out. (more organized)
+2. It allows you to exit the game instantly, this is important cause lots of mods cannot load twice in-game.
+3. Mods are sorted by name in the left-side panel.
+4. It skips the intro before the game.
+5. ~It allows you to manually adjust the offset of the content categories on the left side of the options panel in the "Options panel categories bar horizontal offset."~, not important.
+6. Its option panel categories bar shows mods' updated date, which may be useful to notice deprecated items.
+7. Vanilla disables premium roads, public transports, train tracks, unique buildings, landscaping, police panel, and information view panel in a new game. Game Anarchy unlocks all of those.
+8. It can allow you set positive values to the max value and negative property values to zero.
+
+Ensure vanilla unlimited options are turned off and press "control + shift + g" to check the detailed panel in-game. You will see three minor tabs with many options; I will show you the recommended settings later. 
+
+Game Anarchy cannot implement features like "I want to make a certain group of people do sth", so you need other mods for conjunctions.
+
+## Lifecycle Rebalance Revisited
+
+Why use Lifecycle Rebalance Revisited? Especially when we may not be concerned about the ages of our citizens? As said in this mod's description:
+
+> It implements higher car usage in low-density areas but lower car usage in high-density areas, in contrast to the base game. Additional optional configurations cater to the default game, car-heavy usage, and car usage scaled according to wealth (refer to the 'configuration file' below). This setting can be easily disabled in the mod's options panel, reverting to base-game behavior.
+
+**This adjustment reduces traffic jams in downtown areas.**
+
+While for other options of Lifecycle Rebalance Revisited, you can customize them to your preferences. I personally think the recycling of dead bodies is dumb, so I set it to zero. Also, inside Game Anarchy panel, I turned off 'max land value' and 'education level coverage', because this mod works only when citizens have a not-qual education level and land prices.
+
+### TMPE
+
+As I said before, Lifecycle Rebalance Revisited can decrease the probability of citizens taken by cars from either low residential area or high residential area, make all those options to values smaller than 3 can significantly reduce traffic jams. You may not subscribe TMPE if you are considering its complexities to operate.
+
+## More Path Units & More Citizen Units
+
+These two mods are useful when you city grows very large, they double the default maximum path node number and max citizens number.
+
+## Unlimited Outside Connections Revisited
+
+When you are playing maps like 'seven lakes', the hardest part is the vanilla doesn't provide you more roads connected to outside, that cause resource limitations and traffic jams. Use this mod to break restrictions.
