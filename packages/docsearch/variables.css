@@ -40,7 +40,7 @@
 
 /* Custom style overrides */
 .DocSearch-Modal {
-	border: 1px solid var(--sl-color-hairline-light);
+	border: 1.5px solid var(--sl-color-hairline-light);
 }
 .DocSearch-Logo svg * {
 	fill: var(--docsearch-muted-color);

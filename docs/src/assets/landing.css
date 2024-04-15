@@ -103,10 +103,10 @@
 	--sl-color-bg: #161616;
 	--sl-color-bg-nav: #171414;
 	--sl-color-bg-sidebar: #171414;
-	--sl-color-hairline: #171414;
-	--sl-color-hairline-shade: #171414;
-	--sl-color-hairline-light: #171414;
-	--sl-icon-color: #4e4e4e;
+	--sl-color-hairline: #313131;
+	--sl-color-hairline-shade: #313131;
+	--sl-color-hairline-light: #313131;
+	--sl-icon-color: #c3c3c3;
 }
 
 /* Light mode colors. */
