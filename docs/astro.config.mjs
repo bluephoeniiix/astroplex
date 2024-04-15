@@ -28,12 +28,10 @@ export default defineConfig({
 			replacesTitle: true
 		},
 		editLink: {
-			// baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
 			baseUrl: 'https://github.com/bluephoeniiix'
 		},
 		social: {
 			github: 'https://github.com/bluephoeniiix',
-			// discord: 'https://astro.build/chat'
 		},
 		head: [],
 		customCss: process.env.NO_GRADIENTS ? [] : ['./src/assets/landing.css', '@ibm/plex/css/ibm-plex.css'],
