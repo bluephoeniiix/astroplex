@@ -107,6 +107,7 @@
 	--sl-color-hairline-shade: #313131;
 	--sl-color-hairline-light: #313131;
 	--sl-icon-color: #3d3d3d;
+	--sl-color-card-backgroud-color: #181818;
 }
 
 /* Light mode colors. */
@@ -130,4 +131,5 @@
 	--sl-color-hairline: #e0e0e0;
 	--sl-color-hairline-shade: #e0e0e0;
 	--sl-color-hairline-light: #e0e0e0;
+	--sl-color-card-backgroud-color: #f4f4f4;
 }
