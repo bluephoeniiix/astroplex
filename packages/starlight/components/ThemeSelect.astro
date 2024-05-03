@@ -12,9 +12,9 @@ const { labels } = Astro.props;
 		label={labels['themeSelect.accessibleLabel']}
 		value="auto"
 		options={[
-			{ label: labels['themeSelect.dark'], selected: false, value: 'dark' },
+			{ label: labels['themeSelect.dark'], selected: true, value: 'dark' },
 			{ label: labels['themeSelect.light'], selected: false, value: 'light' },
-			{ label: labels['themeSelect.auto'], selected: true, value: 'auto' },
+			{ label: labels['themeSelect.auto'], selected: false, value: 'auto' },
 		]}
 		width="6.25em"
 	/>
