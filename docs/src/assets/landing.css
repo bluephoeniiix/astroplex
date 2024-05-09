@@ -26,8 +26,14 @@
 }
 
 :root {
-	--sl-content-width: 60rem;
-	width: 100%;
+	--sl-content-width: 10000rem;
+	width: 60%;
+}
+
+@media (max-width: 72rem) {
+	:root {
+		width: 100%;
+	}
 }
 
 :root {
@@ -132,4 +138,19 @@
 	--sl-color-hairline-shade: #e0e0e0;
 	--sl-color-hairline-light: #e0e0e0;
 	--sl-color-card-backgroud-color: #f4f4f4;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--sl-color-gray-4);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	border-radius: 0px;
+    background: var(--sl-color-black);
 }
