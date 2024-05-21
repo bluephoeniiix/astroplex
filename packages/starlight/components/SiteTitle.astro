@@ -11,24 +11,13 @@ const href = formatPath(Astro.props.locale || '/');
 	{
 		config.logo && logos.dark && (
 			<>
-				<img
-					class:list={{ 'light:sl-hidden': !('src' in config.logo) }}
-					alt={config.logo.alt}
-					src={logos.dark.src}
-					width={logos.dark.width}
-					height={logos.dark.height}
-				/>
-				{/* Show light alternate if a user configure both light and dark logos. */}
-				{!('src' in config.logo) && (
-					<img
-						class="dark:sl-hidden"
-						alt={config.logo.alt}
-						src={logos.light?.src}
-						width={logos.light?.width}
-						height={logos.light?.height}
-					/>
-				)}
-				<p style="color: grey;  font-size: 20px; font-weight: 400; font-family: 'IBM Plex Sans">BLUEPHOENIIIX</p>
+				<p style="color: #c1c7cd; font-size: 16px; font-weight: 600; font-family: 'IBM Plex Sans Condensed'; font-style: italic; border: 2px solid #343a3f; padding: 2px; display: inline-flex; align-items: baseline; background: #161616; position: relative; overflow: hidden;">
+					<span style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(transparent 90%, rgba(193, 199, 205, 0.1) 10%), linear-gradient(90deg, transparent 90%, rgba(193, 199, 205, 0.1) 10%); background-size: 5px 5px; z-index: 1;" />
+					<span style="color: #c1c7cd; position: relative; z-index: 2; top: -10px;">BLUE</span>
+					<span style="color: #c1c7cd; position: relative; z-index: 2; top: 10px; margin-left: -5px;">
+						PHOENIIIX
+					</span>
+				</p>
 			</>
 		)
 	}

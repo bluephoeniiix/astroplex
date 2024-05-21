@@ -1,5 +1,113 @@
 h1 {
+    margin-top: 0rem;
+    font-size: 2rem;
+    line-height: var(--sl-line-height-headings);
     font-weight: 800;
-    color: #002d9c;
-    font-family: 'IBM Plex Sans Condensed', condensed;
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: italic;
+    background: linear-gradient(to right, #697077, #ffffff);
+    -webkit-background-clip: text;
+    /* Safari/Chrome */
+    -moz-background-clip: text;
+    /* Firefox */
+    -ms-background-clip: text;
+    /* Internet Explorer */
+    -o-background-clip: text;
+    /* Opera */
+    background-clip: text;
+    color: transparent;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.toc-1 {
+    margin-top: 0rem;
+    font-size: 2rem;
+    line-height: var(--sl-line-height-headings);
+    font-weight: 800;
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: italic;
+    background: linear-gradient(to right, #e5e0df, #ffffff);
+    -webkit-background-clip: text;
+    /* Safari/Chrome */
+    -moz-background-clip: text;
+    /* Firefox */
+    -ms-background-clip: text;
+    /* Internet Explorer */
+    -o-background-clip: text;
+    /* Opera */
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    flex-basis: 60%;
+    padding-right: 20px;
+}
+
+.spacer {
+    flex-basis: 5%;
+}
+
+.right-content {
+    flex-basis: 35%;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.toc-2 {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: italic;
+    font-weight: 800;
+}
+
+.author {
+    font-size: 15px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.description {
+    font-size: 15px;
+    font-family: 'IBM Plex Sans';
+    line-height: 26px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.image-caption {
+    font-size: 10px;
+    font-family: 'IBM Plex Mono';
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .left-content,
+    .right-content,
+    .spacer {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    .right-content {
+        margin-top: 20px;
+    }
 }
