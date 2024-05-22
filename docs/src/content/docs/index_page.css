@@ -1,0 +1,62 @@
+h1 {
+    font-size: 4rem;
+    line-height: var(--sl-line-height-headings);
+    font-weight: 800;
+    font-family: 'IBM Plex Sans Condensed';
+    color: #a9a8a8;
+    /* background-color: #0043ce; */
+    font-style: italic;
+}
+
+
+.t1 {
+    font-size: 2rem;
+    line-height: var(--sl-line-height-headings);
+    font-weight: 100;
+    font-family: 'IBM Plex Sans';
+    color: rgb(240, 240, 240);
+    font-style: italic;
+}
+
+.t2 {
+    padding-top: 1.3rem;
+    font-size: 1.2rem;
+    line-height: var(--sl-line-height-headings);
+    font-weight: 800;
+    font-family: 'IBM Plex Sans Condensed';
+    color: #c4c4c4;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+:root {
+	--sl-content-width: 100000rem;
+	width: 100%;
+}
+
+@media (max-width: 72rem) {
+	:root {
+		width: 100%;
+	}
+}
+
+:root {
+    --sl-sidebar-width: 0rem;
+    /* Offset required to show outline inside an element instead of round the outside */
+    --sl-outline-offset-inside: -0.1875rem;
+
+}
+
+
+.left-image {
+    position: absolute;
+    left: 0;
+    zoom: 40%;
+}

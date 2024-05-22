@@ -143,14 +143,36 @@
 ::-webkit-scrollbar {
     width: 4px;
 }
+
 ::-webkit-scrollbar-track {
     border-radius: 8px;
 }
+
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background: var(--sl-color-gray-4);
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
-	border-radius: 0px;
+    border-radius: 0px;
+    background: var(--sl-color-black);
+}
+
+/* 水平滚动条样式 */
+::-webkit-scrollbar-horizontal {
+    height: 4px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 8px;
+    background: var(--sl-color-gray-4);
+}
+
+::-webkit-scrollbar-thumb:horizontal:window-inactive {
+    border-radius: 0px;
     background: var(--sl-color-black);
 }

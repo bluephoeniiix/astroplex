@@ -28,7 +28,7 @@ export default defineConfig({
 			replacesTitle: true
 		},
 		editLink: {
-			baseUrl: 'https://github.com/bluephoeniiix'
+			baseUrl: 'https://github.com/bluephoeniiix/astroplex/edit/main/docs/src/content/docs'
 		},
 		social: {
 			github: 'https://github.com/bluephoeniiix',

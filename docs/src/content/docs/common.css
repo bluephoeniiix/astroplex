@@ -1,21 +1,10 @@
 h1 {
     margin-top: 0rem;
-    font-size: 2rem;
+    font-size: 4rem;
     line-height: var(--sl-line-height-headings);
     font-weight: 800;
-    font-family: 'IBM Plex Sans Condensed';
+    font-family: 'IBM Plex Mono';
     font-style: italic;
-    background: linear-gradient(to right, #697077, #ffffff);
-    -webkit-background-clip: text;
-    /* Safari/Chrome */
-    -moz-background-clip: text;
-    /* Firefox */
-    -ms-background-clip: text;
-    /* Internet Explorer */
-    -o-background-clip: text;
-    /* Opera */
-    background-clip: text;
-    color: transparent;
 }
 
 @media (max-width: 767px) {
@@ -31,7 +20,7 @@ h1 {
     font-weight: 800;
     font-family: 'IBM Plex Sans Condensed';
     font-style: italic;
-    background: linear-gradient(to right, #e5e0df, #ffffff);
+    background: linear-gradient(to right, #dfdfe5, #ffffff);
     -webkit-background-clip: text;
     /* Safari/Chrome */
     -moz-background-clip: text;
@@ -49,20 +38,25 @@ h1 {
     flex-wrap: wrap;
 }
 
-.left-content {
+.card-left-content {
     flex-basis: 60%;
     padding-right: 20px;
 }
 
-.spacer {
+.card-spacer {
     flex-basis: 5%;
 }
 
-.right-content {
+.card-right-content {
     flex-basis: 35%;
 }
 
 .title {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.card-title {
     font-size: 15px;
     font-weight: 800;
 }
@@ -100,14 +94,14 @@ h1 {
         display: block;
     }
 
-    .left-content,
-    .right-content,
-    .spacer {
+    .card-left-content,
+    .card-right-content,
+    .card-spacer {
         flex-basis: 100%;
         padding-right: 0;
     }
 
-    .right-content {
+    .card-right-content {
         margin-top: 20px;
     }
 }

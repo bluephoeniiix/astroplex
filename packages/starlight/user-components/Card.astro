@@ -19,16 +19,16 @@ const { icon, title } = Astro.props;
 </article>
 
 <style>
-.card {
-    --sl-card-border: var(--sl-color-purple);
-    --sl-card-bg: var(--sl-color-purple-low);
-    border: 1px solid var(--sl-color-gray-5);
-    background-color: var(--sl-color-card-backgroud-color);
-    padding: clamp(0.5rem, calc(0.125rem + 1vw), 1rem); /* 调小了padding值 */
-    flex-direction: column;
-    gap: clamp(0.5rem, calc(0.125rem + 1vw), 1rem);
-    border-radius: 0.5rem;
-}
+	.card {
+		--sl-card-border: var(--sl-color-purple);
+		--sl-card-bg: var(--sl-color-purple-low);
+		border: 1px solid var(--sl-color-gray-5);
+		background-color: var(--sl-color-card-backgroud-color);
+		padding: clamp(0.5rem, calc(0.125rem + 1vw), 1rem); /* 调小了padding值 */
+		flex-direction: column;
+		gap: clamp(0.5rem, calc(0.125rem + 1vw), 1rem);
+		border-radius: 0.5rem;
+	}
 	.card:nth-child(4n + 1) {
 		--sl-card-border: var(--sl-color-orange);
 		--sl-card-bg: var(--sl-color-orange-low);

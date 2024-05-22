@@ -4,6 +4,8 @@ lastUpdated: true
 editUrl: true
 tableOfContents: true
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import './common.css';
 
 _by bluephoeniiix, 4/13/2024_
 
@@ -40,3 +42,171 @@ That's the reason I switched to Astro. I tried to imitate IBM styles as much as 
 
 ![gatsby](/gatsby.png)
 <p style="font-size: 10px; font-family: 'IBM Plex Mono', monospace; font-weight: 400;">[The Original Blog Post Written On Carbon Theme Gatsby]</p>
+
+## Colors 
+
+
+Initially, Astro Starlight provides two themes: one for light and the other for dark mode. I removed the light theme from the menu bar because I prefer the dark theme. I copied the color specifications from  [IBM Color specifications](https://www.ibm.com/design/language/color/), also I downloaded the [IBM Theme](https://marketplace.visualstudio.com/items?itemName=marvinengelmann.ibm-theme) made by Marvin Engelmann from the Visual Studio Marketplace and made a few modifications to fit Astro.
+
+![IBM Color Specifications (Colored)](/ibm_colors_spec.png)
+<p style="font-size: 10px; font-family: 'IBM Plex Mono', monospace; font-weight: 400;">[Color pattel from IBM Carbon]</p>
+
+Example:
+
+<Tabs>
+<TabItem label="adlist.h">
+
+```c
+/* adlist.h - A generic doubly linked list implementation
+ *
+ * Copyright (c) 2006-Present, Redis Ltd.
+ * All rights reserved.
+ *
+ * Licensed under your choice of the Redis Source Available License 2.0
+ * (RSALv2) or the Server Side Public License v1 (SSPLv1).
+ */
+
+#ifndef __ADLIST_H__
+#define __ADLIST_H__
+
+/* Node, List, and Iterator are the only data structures used currently. */
+
+typedef struct listNode {
+    struct listNode *prev;
+    struct listNode *next;
+    void *value;
+} listNode;
+
+typedef struct listIter {
+    listNode *next;
+    int direction;
+} listIter;
+
+typedef struct list {
+    listNode *head;
+    listNode *tail;
+    void *(*dup)(void *ptr);
+    void (*free)(void *ptr);
+    int (*match)(void *ptr, void *key);
+    unsigned long len;
+} list;
+
+/* Functions implemented as macros */
+#define listLength(l) ((l)->len)
+#define listFirst(l) ((l)->head)
+#define listLast(l) ((l)->tail)
+#define listPrevNode(n) ((n)->prev)
+#define listNextNode(n) ((n)->next)
+#define listNodeValue(n) ((n)->value)
+
+#define listSetDupMethod(l,m) ((l)->dup = (m))
+#define listSetFreeMethod(l,m) ((l)->free = (m))
+#define listSetMatchMethod(l,m) ((l)->match = (m))
+
+#define listGetDupMethod(l) ((l)->dup)
+#define listGetFreeMethod(l) ((l)->free)
+#define listGetMatchMethod(l) ((l)->match)
+
+/* Prototypes */
+list *listCreate(void);
+void listRelease(list *list);
+void listEmpty(list *list);
+list *listAddNodeHead(list *list, void *value);
+list *listAddNodeTail(list *list, void *value);
+list *listInsertNode(list *list, listNode *old_node, void *value, int after);
+void listDelNode(list *list, listNode *node);
+listIter *listGetIterator(list *list, int direction);
+listNode *listNext(listIter *iter);
+void listReleaseIterator(listIter *iter);
+list *listDup(list *orig);
+listNode *listSearchKey(list *list, void *key);
+listNode *listIndex(list *list, long index);
+void listRewind(list *list, listIter *li);
+void listRewindTail(list *list, listIter *li);
+void listRotateTailToHead(list *list);
+void listRotateHeadToTail(list *list);
+void listJoin(list *l, list *o);
+void listInitNode(listNode *node, void *value);
+void listLinkNodeHead(list *list, listNode *node);
+void listLinkNodeTail(list *list, listNode *node);
+void listUnlinkNode(list *list, listNode *node);
+
+/* Directions for iterators */
+#define AL_START_HEAD 0
+#define AL_START_TAIL 1
+
+#endif /* __ADLIST_H__ */
+```
+
+</TabItem>
+<TabItem label="ABIInfoImpl.cpp">
+
+```cpp
+//===- ABIInfoImpl.cpp ----------------------------------------------------===//
+//
+// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+// See https://llvm.org/LICENSE.txt for license information.
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+//===----------------------------------------------------------------------===//
+
+#include "ABIInfoImpl.h"
+
+using namespace clang;
+using namespace clang::CodeGen;
+
+
+
+bool CodeGen::isEmptyRecord(ASTContext &Context, QualType T, bool AllowArrays,
+                            bool AsIfNoUniqueAddr) {
+  const RecordType *RT = T->getAs<RecordType>();
+  if (!RT)
+    return false;
+  const RecordDecl *RD = RT->getDecl();
+  if (RD->hasFlexibleArrayMember())
+    return false;
+
+  // If this is a C++ record, check the bases first.
+  if (const CXXRecordDecl *CXXRD = dyn_cast<CXXRecordDecl>(RD))
+    for (const auto &I : CXXRD->bases())
+      if (!isEmptyRecord(Context, I.getType(), true, AsIfNoUniqueAddr))
+        return false;
+
+  for (const auto *I : RD->fields())
+    if (!isEmptyField(Context, I, AllowArrays, AsIfNoUniqueAddr))
+      return false;
+  return true;
+}
+
+bool CodeGen::isSIMDVectorType(ASTContext &Context, QualType Ty) {
+  return Ty->getAs<VectorType>() && Context.getTypeSize(Ty) == 128;
+}
+
+bool CodeGen::isRecordWithSIMDVectorType(ASTContext &Context, QualType Ty) {
+  const RecordType *RT = Ty->getAs<RecordType>();
+  if (!RT)
+    return false;
+  const RecordDecl *RD = RT->getDecl();
+
+  // If this is a C++ record, check the bases first.
+  if (const CXXRecordDecl *CXXRD = dyn_cast<CXXRecordDecl>(RD))
+    for (const auto &I : CXXRD->bases())
+      if (!isRecordWithSIMDVectorType(Context, I.getType()))
+        return false;
+
+  for (const auto *i : RD->fields()) {
+    QualType FT = i->getType();
+
+    if (isSIMDVectorType(Context, FT))
+      return true;
+
+    if (isRecordWithSIMDVectorType(Context, FT))
+      return true;
+  }
+
+  return false;
+}
+```
+
+</TabItem>
+</Tabs>
