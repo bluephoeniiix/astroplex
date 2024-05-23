@@ -90,8 +90,8 @@
 	--sl-text-h4: var(--sl-text-xl);
 	--sl-text-h5: var(--sl-text-lg);
 
-	--sl-line-height: 1.8;
-	--sl-line-height-headings: 1.2;
+	--sl-line-height: 22px;
+	--sl-line-height-headings: 60px;
 
 	--sl-font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 		'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -106,7 +106,7 @@
 	--sl-nav-pad-x: 1rem;
 	--sl-nav-pad-y: 0.75rem;
 	--sl-mobile-toc-height: 3rem;
-	--sl-sidebar-width: 18.75rem;
+	--sl-sidebar-width: 23rem;
 	--sl-sidebar-pad-x: 1rem;
 	--sl-content-width: 45rem;
 	--sl-content-pad-x: 1rem;

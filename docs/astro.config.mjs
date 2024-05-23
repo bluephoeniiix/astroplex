@@ -39,8 +39,8 @@ export default defineConfig({
 		sidebar: [{
 			label: 'About This Site',
 			items: [{
-				label: 'Blue Phoeniiix Channel',
-				link: 'bluephoeniiix_channel'
+				label: 'Catalogs',
+				link: 'catalogs'
 			}, {
 				label: 'Themes',
 				link: 'astroplex_theme'

@@ -2,24 +2,16 @@
 title: SUPPORTED FEATURES
 lastUpdated: true
 editUrl: true
-tableOfContents: false
+tableOfContents: true
 ---
+
+import "./common.css";
+
+_by bluephoeniiix, 23/05/2024_
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-<br></br>
+## 1. Group Tabs
 
 <Tabs>
 <TabItem label="npm">
@@ -45,22 +37,23 @@ yarn create astro --template starlight
 </TabItem>
 </Tabs>
 
-:::tip[TIPS]
-A TIPS
+## 2. Note aside
+
+:::tip[An Example Tips]
+An Example Tips
 :::
 
-### `Inline Code`
+## 3. Inline Code
 
-Inline code `code`.
+This is an `Inline Code`
+
+## 4. Bold Tags
+1. **Bold Tag** Words.
+2. **Bold Tag** Words.
+3. **Bold Tag** Words.
 
 
-### Bold Tags
-- **Bold Tag** Words.
-- **Bold Tag** Words.
-- **Bold Tag** Words.
-
-
-## Code 
+## 5. Expressive Code 
 
 ```js ins={8}
 // astro.config.mjs
@@ -87,7 +80,7 @@ export const collections = {
 };
 ```
 
-## Tree
+## 6. Tree Structures
 
 import FileTree from '~/components/file-tree.astro';
 
@@ -104,6 +97,11 @@ import FileTree from '~/components/file-tree.astro';
 
 </FileTree>
 
+
+## 7. Katex Support
+
+### Inline Math Formulas
+
 <section style={{ display: 'flex' }}>
   <div style={{ flexBasis: '70%', paddingRight: '20px' }}>
     <p>
@@ -118,8 +116,9 @@ import FileTree from '~/components/file-tree.astro';
   </div>
 </section>
 
+### Block Formulas
 
-## Math Support
+ex1:
 
 $$
  \lim_{x\to 0}{\frac{e^x-1}{2x}}
@@ -127,7 +126,7 @@ $$
  \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
 $$
 
-I Hate $LATEX$.
+ex2:
 
 $$
   x = a_0 + \frac{1}{\displaystyle a_1 
@@ -136,7 +135,7 @@ $$
 $$
 
 
-## Table 
+## 8. Table 
 
 |                |ASCII                          |HTML                         |
 |----------------|-------------------------------|-----------------------------|

@@ -111,11 +111,11 @@ const { sublist, nested } = Astro.props;
 
 	a {
 		display: block;
-		border-radius: 0.25rem;
 		text-decoration: none;
 		color: var(--sl-color-gray-2);
 		padding: 0.3em var(--sl-sidebar-item-padding-inline);
-		line-height: 1.4;
+		line-height: 17px;
+		font-family: 'IBM Plex Sans Condensed';
 	}
 
 	a:hover,
@@ -141,10 +141,13 @@ const { sublist, nested } = Astro.props;
 			margin-top: 0.5rem;
 		}
 		.large {
-			font-size: var(--sl-text-base);
+			font-size: 15px;
+			color: #cdcdcd;
 		}
 		a {
-			font-size: var(--sl-text-sm);
+			font-size: 15px;
+			font-weight: 400;
+			color: #a8a8a8;
 		}
 	}
 </style>

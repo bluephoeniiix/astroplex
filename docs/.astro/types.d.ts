@@ -164,9 +164,9 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"bluephoeniiix_channel.mdx": {
-	id: "bluephoeniiix_channel.mdx";
-  slug: "bluephoeniiix_channel";
+"catalogs.mdx": {
+	id: "catalogs.mdx";
+  slug: "catalogs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
