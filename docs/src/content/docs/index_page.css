@@ -1,9 +1,9 @@
 h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
     line-height: var(--sl-line-height-headings);
-    font-weight: 800;
+    font-weight: 400;
     font-family: 'IBM Plex Sans Condensed';
-    color: #a9a8a8;
+    color: #68696c;
     /* background-color: #0043ce; */
     font-style: italic;
 }
@@ -30,7 +30,7 @@ h1 {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: 1rem;
+        font-size: 2rem;
         margin-top: 0rem;
         margin-bottom: 0rem;
     }

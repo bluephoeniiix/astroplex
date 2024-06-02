@@ -42,8 +42,8 @@ export default defineConfig({
 				label: 'Catalogs',
 				link: 'catalogs'
 			}, {
-				label: 'Themes',
-				link: 'astroplex_theme'
+				label: 'Design',
+				link: 'design'
 			}, {
 				label: 'Layout',
 				link: 'astroplex_layout'

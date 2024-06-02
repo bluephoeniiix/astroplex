@@ -7,13 +7,27 @@ import { formatPath } from '../utils/format-path';
 const href = formatPath(Astro.props.locale || '/');
 ---
 
-<a {href} class="site-title sl-flex">
+<a {href} class="site-title sl-flex site-title-transform">
 	{
 		config.logo && logos.dark && (
-			<>
-				<p style="color: #0f62fe; font-size: 25px; font-weight: 600; font-family: 'IBM Plex Sans Condensed'; font-style: italic;">
-					BLUEPHOENIIIX
-				</p>
+		<>
+				<img
+					class:list={{ 'light:sl-hidden': !('src' in config.logo) }}
+					alt={config.logo.alt}
+					src={logos.dark.src}
+					width={logos.dark.width}
+					height={logos.dark.height}
+				/>
+				{/* Show light alternate if a user configure both light and dark logos. */}
+				{!('src' in config.logo) && (
+					<img
+						class="dark:sl-hidden"
+						alt={config.logo.alt}
+						src={logos.light?.src}
+						width={logos.light?.width}
+						height={logos.light?.height}
+					/>
+				)}
 			</>
 		)
 	}
@@ -35,7 +49,7 @@ const href = formatPath(Astro.props.locale || '/');
 			monospace;
 	}
 	img {
-		height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
+		height: calc((var(--sl-nav-height) - 2 * var(--sl-nav-pad-y))*1.5);
 		width: auto;
 		max-width: 100%;
 		object-fit: contain;
@@ -43,4 +57,14 @@ const href = formatPath(Astro.props.locale || '/');
 		font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
 			monospace;
 	}
+	@media (min-width: 400px) {
+        .site-title-transform {
+            transform: scale(1)  translateY(-0.3rem)
+        }
+    }
+    @media (max-width: 399px) {
+        .site-title-transform {
+            transform: scale(1);
+        }
+    }
 </style>

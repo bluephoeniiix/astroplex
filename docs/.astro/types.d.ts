@@ -157,13 +157,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"astroplex_theme.mdx": {
-	id: "astroplex_theme.mdx";
-  slug: "astroplex_theme";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "catalogs.mdx": {
 	id: "catalogs.mdx";
   slug: "catalogs";
@@ -272,6 +265,13 @@ declare module 'astro:content' {
 "csl_vehicles.mdx": {
 	id: "csl_vehicles.mdx";
   slug: "csl_vehicles";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"design.mdx": {
+	id: "design.mdx";
+  slug: "design";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
