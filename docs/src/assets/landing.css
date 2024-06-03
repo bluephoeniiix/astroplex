@@ -104,16 +104,16 @@
 	--sl-color-gray-3: #888b96;
 	--sl-color-gray-4: #545861;
 	--sl-color-gray-5: #353841;
-	--sl-color-gray-6: #1b1b1b;
-	--sl-color-black: #181818;
-	--sl-color-bg: #161616;
-	--sl-color-bg-nav: #171414;
-	--sl-color-bg-sidebar: #171414;
+	--sl-color-gray-6: #121619;
+	--sl-color-black: #121619;
+	--sl-color-bg: #121619;
+	--sl-color-bg-nav: #101214;
+	--sl-color-bg-sidebar: #121619;
 	--sl-color-hairline: #313131;
 	--sl-color-hairline-shade: #313131;
 	--sl-color-hairline-light: #313131;
 	--sl-icon-color: #3d3d3d;
-	--sl-color-card-backgroud-color: #181818;
+	--sl-color-card-backgroud-color: #121619;
 }
 
 /* Light mode colors. */
