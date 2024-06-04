@@ -49,11 +49,12 @@ const href = formatPath(Astro.props.locale || '/');
 			monospace;
 	}
 	img {
-		height: calc((var(--sl-nav-height) - 2 * var(--sl-nav-pad-y)) * 2);
+		height: calc((var(--sl-nav-height) - 2 * var(--sl-nav-pad-y)) * 1);
 		width: auto;
 		max-width: 100%;
 		object-fit: contain;
 		object-position: 0 50%;
+		transform: translateX(-0rem);
 		font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
 			monospace;
 	}
