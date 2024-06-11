@@ -10,10 +10,10 @@ import Icon from '../user-components/Icon.astro';
 			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
 		const theme =
 			storedTheme ||
-			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark');
+		document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'dark';
 		return {
-			updatePickers(theme = storedTheme || 'auto') {
+			updatePickers(theme = storedTheme || 'dark') {
 				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
 					const select = picker.querySelector('select');
 					if (select) select.value = theme;
@@ -33,7 +33,5 @@ import Icon from '../user-components/Icon.astro';
 </script>
 
 <template id="theme-icons">
-	<Icon name="sun" class="light" />
 	<Icon name="moon" class="dark" />
-	<Icon name="laptop" class="auto" />
 </template>
