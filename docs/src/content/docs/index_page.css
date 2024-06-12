@@ -86,3 +86,21 @@ h1 {
 	width: 40%;
 	margin-left: 0px;
 }
+
+@media only screen and (max-width: 700px) {
+  .long-text {
+    width: auto;
+  }
+}
+
+.sl-link-card {
+  width: 80%;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .sl-link-card {
+    width: 100%;
+  }
+}
+
