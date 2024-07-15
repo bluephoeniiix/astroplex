@@ -42,51 +42,7 @@ export default defineConfig({
 				: ['./src/assets/landing.css', '@ibm/plex/css/ibm-plex.css'],
 			locales,
 			sidebar: [
-				{
-					label: 'Project TACO',
-					items: [
-						{
-							label: 'TODO',
-							link: '1',
-						},
-					],
-				},
-				{
-					label: 'CSL Mods && Assets',
-					items: [
-						{
-							label: 'TODO',
-							link: '2',
-						},
-					],
-				},
-				{
-					label: 'Deep Dive Istio',
-					items: [
-						{
-							label: 'TODO',
-							link: '3',
-						},
-					],
-				},
-				{
-					label: 'Online Judgement',
-					items: [
-						{
-							label: 'TODO',
-							link: '4',
-						},
-					],
-				},
-				{
-					label: 'Site Dev',
-					items: [
-						{
-							label: 'All About This Site',
-							link: '5',
-						},
-					],
-				},
+
 			],
 			plugins: process.env.CHECK_LINKS
 				? [

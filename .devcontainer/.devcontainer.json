@@ -1,0 +1,6 @@
+{
+    "name": "WebStorm Development Container",
+    "image": "ubuntu:latest",
+    "workspaceFolder": "/init",
+    "remoteUser": "root"
+}
